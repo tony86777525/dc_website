@@ -1,0 +1,7 @@
+---
+import '../styles/global.css';
+import {profile} from '../data/site';
+import CategoryBar from '../components/CategoryBar';
+const {title='網站開發，從理解需求開始', description=profile.description}=Astro.props;
+---
+<!doctype html><html lang="zh-Hant"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="description" content={description}/><meta property="og:title" content={title}/><meta property="og:description" content={description}/><meta property="og:type" content="website"/><title>{title} · {profile.name}</title></head><body><a class="skip" href="#main">跳到主要內容</a><header><a class="wordmark" href={import.meta.env.BASE_URL}>獨立開發<span> / WEB & SYSTEMS</span></a><CategoryBar client:load/></header><main id="main"><slot/></main><footer><span>以清楚的溝通，完成實用的網站。</span><a href="#main">回到頂端 ↑</a></footer></body></html>

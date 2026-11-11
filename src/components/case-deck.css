@@ -1,0 +1,22 @@
+.deck{text-align:center}.deck-cards{display:flex;justify-content:center;padding:25px}.deck-card{position:relative;width:min(260px,76vw);aspect-ratio:3/4;border:0;border-radius:22px;overflow:hidden;text-align:left;color:white;cursor:pointer;background:#203b60;box-shadow:0 12px 28px -8px #0008,0 30px 60px -24px #0009}.deck-card img,.deck-visual img{width:100%;height:100%;object-fit:cover;object-position:top}.deck-overlay{position:absolute;inset:0;background:linear-gradient(transparent 25%,#071322e8)}.deck-label{position:absolute;left:22px;right:22px;bottom:24px;display:grid;gap:9px}.deck-label small,.deck-visual small{font-size:10px;letter-spacing:.15em}.deck-label strong{font-size:26px}.deck-label span{font-size:13px}.deck-hint{font-size:12px}.deck-modal{position:fixed;inset:0;z-index:100;display:grid;place-items:center;padding:20px}.deck-backdrop{position:absolute;inset:0;background:#0009}.deck-panel{position:relative;width:min(380px,100%);max-height:calc(100dvh - 40px);overflow:auto;background:#f8f8f7;color:#1d1d1f;box-shadow:0 10px 30px #0003,0 50px 100px -20px #0009;text-align:left}.deck-visual{height:176px;position:relative;overflow:hidden;background:#203b60;color:white}.deck-visual:after{content:'';position:absolute;inset:0;background:linear-gradient(transparent,#071322dd);pointer-events:none}.deck-visual-title{position:absolute;left:24px;bottom:20px;z-index:1}.deck-visual-title h3{font-size:34px}.deck-close{position:absolute;z-index:2;right:12px;top:12px;width:44px;height:44px;display:grid;place-items:center;border:0;border-radius:50%;background:#ffffff35;color:white;cursor:pointer}.deck-content{padding:20px 24px 24px}.deck-content p{color:#666;font-size:14px}.deck-meta{font-size:12px;color:#777;margin:20px 0}.deck-content a{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:30px;background:#1d1d1f;color:#fff;min-height:44px;font-size:14px}.deck-card:focus-visible,.deck-close:focus-visible,.deck-content a:focus-visible{outline:3px solid #a5c4ff;outline-offset:3px}@media(prefers-color-scheme:dark){.deck-panel{background:#171615;color:#f5f5f7}.deck-content p,.deck-meta{color:#aaa}.deck-content a{background:#fff;color:#111}}@media(max-width:320px){.deck-modal{padding:10px}.deck-panel{max-height:calc(100dvh - 20px)}}
+.deck-cards{gap:16px;align-items:stretch}
+.deck-card--yahsin,.deck-visual--yahsin{background:radial-gradient(circle at 75% 20%,#668d88 0,transparent 48%),linear-gradient(145deg,#334b4a,#162b35 65%,#0d1b27)}
+@media(max-width:700px){.deck-cards{gap:10px}.deck-card{min-width:0;width:min(44%,210px)}.deck-label{left:12px;right:12px;bottom:14px;gap:5px}.deck-label strong{font-size:clamp(16px,4vw,23px)}.deck-label span{font-size:11px}.deck-label small{font-size:9px;letter-spacing:.08em}}
+.deck-overlay{background:linear-gradient(transparent 12%,#071322ee 85%)}
+/* Keep each miniature above the case label; it is decorative and never captures input. */
+.deck-card .case-art{bottom:29%}
+.deck-visual .case-art{bottom:0}
+.deck-card .deck-overlay{background:linear-gradient(transparent 38%,#071322db 70%,#071322 100%)}
+.deck-label{z-index:2}
+.deck-visual .case-art{opacity:.78}
+@media(max-width:700px){.deck-card .case-art{bottom:31%}}
+/* Keep all case cards reachable on small screens without shrinking the previews. */
+@media(max-width:700px){.deck-cards{justify-content:flex-start;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x proximity;scrollbar-width:thin}.deck-cards .deck-card{flex:0 0 43%;scroll-snap-align:center}.deck-hint::after{content:' · 左右滑動查看更多'}}
+/* Keep case names on a solid surface so they remain readable over every image. */
+.deck-card .case-art{bottom:50%}
+.deck-card .deck-overlay{background:linear-gradient(to bottom,transparent 41%,#071322 50%,#071322 100%)}
+.deck-card .deck-label{inset:auto 0 0;min-height:50%;padding:12px 14px;display:flex;flex-direction:column;justify-content:center;gap:6px;color:#fff}
+.deck-card .deck-label small{display:none}
+.deck-card .deck-label strong{font-size:clamp(16px,1.7vw,21px);line-height:1.2;overflow-wrap:anywhere}
+.deck-card .deck-label span{font-size:12px;line-height:1.45;color:#d6e0ed}
+@media(max-width:700px){.deck-cards .deck-card{flex-basis:clamp(145px,43%,210px)}.deck-card .deck-label{padding:10px 12px;gap:4px}.deck-card .deck-label strong{font-size:clamp(16px,4vw,20px)}.deck-card .deck-label span{font-size:11px}}

@@ -1,0 +1,5 @@
+---
+import Base from '../../layouts/Base.astro';
+import Demo from '../../components/Demo';
+---
+<Base title="表單驗證 · 動態展示範本"><section class="case-head"><a href={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/#work`}>← 返回案例</a><div class="eyebrow">INTERFACE STUDY / 001</div><h1>讓每一步操作，<br/>都有清楚的回應。</h1><p>展示範本，非實際客戶案例。以下為模擬介面，不會建立帳號或傳送資料。</p></section><section class="demo-section"><Demo client:load/><noscript><p>動態展示需要 JavaScript。流程：填入不完整 Email → 顯示錯誤 → 補齊網域 → 顯示建立完成。</p></noscript><p class="note">stageshow 操作示意 · 電子郵件與介面資料皆為虛構範例</p></section><section class="case-details"><div><div class="eyebrow">THE FLOW</div><h2>看見問題，也知道下一步。</h2><p>填入不完整電子郵件時，介面指出問題；修正後清除錯誤，完成操作時提供確認回應。</p></div><div><h3>實際案例資料待補</h3><dl><dt>客戶需求</dt><dd>待提供</dd><dt>我的角色與貢獻</dt><dd>待確認</dd><dt>成果與公開素材</dt><dd>待提供與確認公開授權</dd></dl><a href={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/#contact`} class="text-link">討論類似需求 ↗</a></div></section></Base>

@@ -1,0 +1,86 @@
+:root{--bg:#f6f5ef;--ink:#223c33;--muted:#627067;--line:#d5dad1;--accent:#d9ed8b;font-family:Inter,'Noto Sans TC',system-ui,sans-serif;color:var(--ink);background:var(--bg);font-synthesis:none}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:30px}body{margin:0}a{color:inherit;text-decoration:none}a:focus-visible,button:focus-visible{outline:3px solid #567319;outline-offset:6px}p{line-height:1.9;color:var(--muted)}header,main,footer{max-width:1280px;margin:auto}header{padding:30px 48px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.wordmark{font-weight:750;letter-spacing:.04em}.wordmark span{font-size:10px;font-weight:500;margin-left:12px}nav{display:flex;gap:30px;align-items:center;font-size:14px}.nav-contact{border-bottom:1px solid;padding:8px 0}section{padding:88px 48px;border-bottom:1px solid var(--line)}.eyebrow{font-size:11px;letter-spacing:.16em;font-weight:650;margin-bottom:20px;text-transform:uppercase}h1,h2,h3{font-weight:550;letter-spacing:-.045em;margin:0}h1{font-size:clamp(40px,5.8vw,76px);line-height:1.3}h2{font-size:clamp(30px,3vw,42px);line-height:1.4}h3{font-size:24px;line-height:1.5}.hero{padding-top:78px;padding-bottom:0}.hero h1 span{color:#6a8146}.hero-bottom{display:flex;justify-content:space-between;align-items:center;margin:28px 0 65px}.hero-bottom p{font-size:18px}.button{display:inline-flex;gap:40px;padding:20px 24px;background:var(--ink);color:#fff;border-radius:3px;font-size:14px}.button:hover{background:#365345}.hero-foot{border-top:1px solid var(--line);padding:20px 0;display:flex;justify-content:space-between;font-size:10px;letter-spacing:.14em}.section-top{display:flex;align-items:end;justify-content:space-between;margin-bottom:42px}.section-top p{font-size:14px;margin:0}.services{display:grid;grid-template-columns:repeat(3,1fr);gap:34px}.services article{border-top:1px solid var(--ink);padding-top:22px}.number{font-size:12px;color:#74806b;display:block;margin-bottom:36px}.services .eyebrow{margin-bottom:6px;color:var(--muted);font-size:10px}.services p{font-size:14px;min-height:80px}.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:26px}.tags span,.badge{border:1px solid var(--line);padding:6px 10px;border-radius:20px;font-size:10px}.work{display:grid;grid-template-columns:1.3fr 1fr;background:#eeeee6}.work-art{background:var(--ink);color:var(--accent);padding:50px;min-height:390px;display:flex;flex-direction:column;justify-content:space-between;background-image:linear-gradient(#ffffff09 1px,transparent 1px),linear-gradient(90deg,#ffffff09 1px,transparent 1px);background-size:44px 44px}.art-label,.art-foot{font-size:10px;letter-spacing:.12em}.art-title{font-size:42px;line-height:1.4;letter-spacing:-.04em}.work-copy{padding:45px;align-self:center}.work-copy h3{font-size:34px;margin:25px 0 15px}.work-copy p{font-size:14px}.text-link{display:inline-block;border-bottom:1px solid;padding:12px 0;font-size:14px}.work:hover .text-link{color:#657d35}.about{display:grid;grid-template-columns:1fr 1fr;gap:60px}.lead{font-size:23px;color:var(--ink);margin-top:0}.note{font-size:12px!important;color:#68716c}.process{display:grid;grid-template-columns:repeat(4,1fr);gap:30px;margin-top:44px}.process>div{border-top:1px solid var(--line);padding-top:20px}.process h3{font-size:20px}.process p{font-size:14px}.contact{background:#e9edde}.contact h2{font-size:clamp(34px,4vw,53px)}.contact-links{display:flex;gap:28px;margin-top:35px;font-size:13px}.contact-links>span{padding:15px 0;border-bottom:1px solid #a9b29e}footer{display:flex;justify-content:space-between;padding:30px 48px;font-size:11px;color:var(--muted)}.skip{position:absolute;left:16px;top:-100px;padding:12px;background:white;z-index:99}.skip:focus{top:10px}.case-head>a{display:inline-block;font-size:13px;margin-bottom:45px}.case-head h1{font-size:56px}.demo-section{max-width:760px;margin:auto;padding-top:45px;padding-bottom:40px}.case-details{display:grid;grid-template-columns:1fr 1fr;gap:70px}dl{display:grid;grid-template-columns:1fr 1fr;font-size:14px;line-height:2.5}dd{margin:0;color:var(--muted)}@media(max-width:700px){header{padding:22px}header .wordmark span{display:none}nav{gap:16px;font-size:12px}nav a:nth-child(3){display:none}section{padding:55px 22px}.hero{padding-top:50px}.hero-bottom,.section-top{display:block}.hero-bottom{margin-bottom:35px}.hero-bottom p{font-size:16px}.hero-foot{font-size:8px;gap:16px}.section-top p{margin-top:20px}.services,.about,.case-details{grid-template-columns:1fr;gap:35px}.services p{min-height:0}.services .number{margin-bottom:20px}.work{grid-template-columns:1fr}.work-art{min-height:280px;padding:30px}.art-title{font-size:34px}.work-copy{padding:30px}.process{grid-template-columns:1fr 1fr;gap:24px}.contact-links{flex-direction:column;gap:8px;align-items:start}footer{padding:25px 22px;gap:22px;flex-wrap:wrap}footer span:nth-child(2){display:none}.case-head h1{font-size:36px}.demo-section{padding:25px 16px}.lead{font-size:20px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition-duration:0s!important}}
+.demo-section{overflow:hidden;min-width:0}.demo-section astro-island{display:block;max-width:100%;min-width:0}
+/* Portfolio: dark, restrained surfaces and a compact editorial hierarchy. */
+:root{--bg:#111213;--ink:#f1f1ef;--muted:#a2a4a2;--line:#303234;--accent:#c7d5ff;color-scheme:dark}body{background:radial-gradient(ellipse at 50% -15%,#282d39 0,transparent 44%),var(--bg)}header,main,footer{max-width:1080px}header{padding-top:24px;padding-bottom:24px}.wordmark{letter-spacing:.01em}.nav-contact{border:1px solid #444;border-radius:30px;padding:11px 18px}.hero{padding-top:105px}.hero h1{font-size:clamp(42px,6vw,72px);font-weight:600}.hero h1 span{color:#b1bcce}.eyebrow{color:#8e969d}.button{background:#efefec;color:#151719;border-radius:100px}.button:hover{background:#ccd4df}.hero-foot{color:#959b9d}.services{gap:16px}.services article{border:1px solid #35383a;border-radius:18px;background:#1c1e20;padding:24px;min-height:270px}.services .number{margin-bottom:26px}.tags span,.badge{border-color:#45494c}.contact{background:#202326;border-radius:24px;margin:60px 48px}.lead{color:#e4e6e4}.deck{border:1px solid #343638;border-radius:24px;padding:30px;background:#1a1c1e}.about{gap:60px}.process>div{border-color:#45484b}footer{color:#969a9c}@media(max-width:700px){.hero{padding-top:65px}.contact{margin:35px 22px}.deck{padding:14px}.services article{min-height:0}}
+/* Tabfolio-inspired dark portfolio presentation */
+:root{--bg:#09090b;--ink:#f4f4f5;--muted:#a4a4ad;--line:#29292f}body{background:radial-gradient(ellipse 650px 410px at 50% -70px,#302579 0%,#141133 52%,transparent 100%),#09090b}header{border:0;justify-content:center;padding:22px 20px}.wordmark{display:none}nav{background:#191927;border:1px solid #ffffff0b;border-radius:32px;padding:5px;gap:0}nav a{padding:12px 17px;font-size:14px;color:#c7c6d0}nav a:first-child{background:#09090d;border-radius:25px;color:white}.nav-contact{border:0}main{max-width:940px}.hero{padding-top:70px;border:0}.hero h1{font-size:clamp(38px,5vw,60px);font-weight:500;letter-spacing:-.04em}.hero h1 span{color:#f4f4f5}.hero-bottom{display:block;margin:22px 0 48px}.hero-bottom p{font-size:17px}.hero-bottom .button{margin-top:8px}.hero-foot{display:none}section{padding-top:60px;padding-bottom:60px}.services article{background:#141416;border-color:#28282d}.deck{background:#121216;border-color:#28282d}.contact{background:#161619}.contact h2{font-weight:500}@media(max-width:700px){header{padding:20px 10px}nav a{padding:11px 12px;font-size:12px}.hero{padding-top:55px}.hero h1{font-size:38px}section{padding-top:50px;padding-bottom:50px}}
+
+/* Homepage portrait and gentle section snapping. */
+.hero-avatar{display:block;width:72px;height:72px;object-fit:cover;border-radius:22px;margin-bottom:28px;border:1px solid #ffffff24;background:#23232b}
+html:has(.hero){scroll-snap-type:y proximity;scroll-padding-top:20px}
+html:has(.hero) main>section{scroll-snap-align:start;scroll-margin-top:20px}
+@media(max-width:700px){.hero-avatar{width:64px;height:64px;border-radius:20px;margin-bottom:24px}}
+@media(prefers-reduced-motion:reduce){html:has(.hero){scroll-snap-type:none;scroll-behavior:auto}}
+/* Keep the navigation and hero together at the top of the page. */
+html:has(.hero) header{scroll-snap-align:start}
+html:has(.hero) main>section.hero{scroll-snap-align:none}
+
+/* Full-screen sections on the homepage; tall sections remain scrollable. */
+html:has(.hero){scroll-snap-type:y mandatory;scroll-padding-top:0}
+html:has(.hero) body>header{position:fixed;z-index:20;top:0;left:0;right:0;max-width:none;padding:18px 16px;pointer-events:none;scroll-snap-align:none}
+html:has(.hero) body>header nav{pointer-events:auto;box-shadow:0 8px 28px #0006}
+html:has(.hero) main>section{min-height:100svh;scroll-snap-align:start;scroll-margin-top:0;padding:100px 48px 64px;display:flex;flex-direction:column;justify-content:center}
+html:has(.hero) main>section.hero{scroll-snap-align:start;align-items:flex-start}
+html:has(.hero) .hero-bottom{margin:20px 0 0}
+html:has(.hero) .hero-avatar{margin-bottom:24px}
+html:has(.hero) .section-top{margin-bottom:32px}
+html:has(.hero) #work .deck{padding:10px 24px}
+html:has(.hero) #work .deck-card{width:min(210px,55vw)}
+html:has(.hero) #work .deck-cards{padding:14px}
+html:has(.hero) #about{display:grid;align-content:center;align-items:start}
+html:has(.hero) .contact{margin:0;border-radius:0}
+html:has(.hero) footer{scroll-snap-align:end}
+@media(max-width:700px){
+ html:has(.hero) body>header{padding:12px}
+ html:has(.hero) main>section{padding:90px 22px 48px}
+ html:has(.hero) .hero h1{font-size:clamp(32px,8vw,40px)}
+ html:has(.hero) .services{gap:10px}
+ html:has(.hero) .services article{padding:17px 20px}
+ html:has(.hero) .services .number{display:none}
+ html:has(.hero) .services p{margin:8px 0;font-size:13px;line-height:1.7}
+ html:has(.hero) .tags{margin-top:12px}
+ html:has(.hero) .process{margin-top:28px}
+ html:has(.hero) .process .number{margin-bottom:16px}
+ html:has(.hero) .process p{line-height:1.6}
+}
+@media(prefers-reduced-motion:reduce){html:has(.hero){scroll-snap-type:none;scroll-behavior:auto}}
+
+/* Quiet colour separates text-heavy panels without distracting from their content. */
+html:has(.hero) #services .services article{background:linear-gradient(145deg,#222532,#191b24);border-color:#3a3d4e}
+html:has(.hero) #services .services article:nth-child(2){background:linear-gradient(145deg,#222a31,#191f27)}
+html:has(.hero) #services .services article:nth-child(3){background:linear-gradient(145deg,#2a2530,#201c25)}
+html:has(.hero) #about>div:last-child{padding:clamp(24px,4vw,38px);border:1px solid #39404d;border-radius:22px;background:linear-gradient(145deg,#232936,#191d27)}
+html:has(.hero) #about .note{color:#aeb5c1}
+html:has(.hero) #process .process>div{padding:22px;border:1px solid #3c3b49;border-radius:18px;background:#22212b}
+html:has(.hero) #process .process>div:nth-child(even){background:#1d252b;border-color:#39444a}
+html:has(.hero) #contact{background:radial-gradient(ellipse at 75% 45%,#252940,#181925 58%,#111117)}
+@media(max-width:700px){html:has(.hero) #process .process>div{padding:16px}html:has(.hero) #about>div:last-child{padding:24px}}
+
+/* Subtle one-time scroll reveals. Elements stay visible without JavaScript. */
+@media (prefers-reduced-motion: no-preference) {
+  .scroll-revealed { animation: scroll-reveal 300ms cubic-bezier(.22,1,.36,1) backwards; }
+  #services article:nth-child(2).scroll-revealed, #process .process>div:nth-child(2).scroll-revealed { animation-delay: 70ms; }
+  #services article:nth-child(3).scroll-revealed, #process .process>div:nth-child(3).scroll-revealed { animation-delay: 140ms; }
+  #process .process>div:nth-child(4).scroll-revealed { animation-delay: 210ms; }
+  /* A transformed ancestor would change the case dialog's fixed positioning. */
+  #work .deck.scroll-revealed { animation-name: scroll-reveal-opacity; }
+  @keyframes scroll-reveal { from { opacity: .15; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes scroll-reveal-opacity { from { opacity: .15; } to { opacity: 1; } }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .scroll-pending { visibility: hidden; }
+}
+
+/* Process icons share a quiet visual treatment with the existing cards. */
+.process-icon-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px}
+.process-icon{display:grid;place-items:center;width:44px;height:44px;border:1px solid #798cb033;border-radius:14px;color:#b9cbef;background:#8299cf18}
+.process .process-icon-row .number{margin:0;color:#a0a8b2}
+@media(max-width:700px){html:has(.hero) .process .process-icon-row{margin-bottom:16px}html:has(.hero) .process .process-icon-row .number{margin:0}}
+/* Give each process icon its own line and half the card's content width. */
+html:has(.hero) #process .process>div{position:relative}
+html:has(.hero) #process .process>div>.number{position:absolute;top:20px;right:22px;margin:0;color:#a0a8b2}
+html:has(.hero) #process .process-icon-row{display:flex;justify-content:center;margin:10px 0 22px}
+html:has(.hero) #process .process-icon{width:50%;height:auto;aspect-ratio:1;display:grid;place-items:center;border:0;border-radius:0;background:none;color:#b9cbef}
+html:has(.hero) #process .process-icon svg{display:block;width:100%;height:100%}
+@media(max-width:700px){html:has(.hero) #process .process>div>.number{top:16px;right:16px}html:has(.hero) #process .process-icon-row{margin:8px 0 16px}}
+@media(max-width:700px){html:has(.hero) #work .deck{padding:10px 8px}html:has(.hero) #work .deck-cards{padding:10px 4px}}

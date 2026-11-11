@@ -1,0 +1,59 @@
+---
+const steps = [
+  { title: '選擇候選人', description: '參與者在活動頁面選擇想支持的候選人。' },
+  { title: 'LINE 登入與授權', description: '使用 LINE 帳號登入並完成授權，以取得帳號資料。' },
+  { title: '傳送與整理資料', description: '使用 JavaScript 將資料送至 Google Apps Script API，經整理後追加至 Google Sheets。' },
+  { title: '確認投票資料', description: '業主透過 Google Sheets 查看參與投票的人員資料與票數統計。' },
+];
+---
+<!doctype html>
+<html lang="zh-Hant">
+  <head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" /><meta name="description" content="大地女力活動的 LINE 登入投票及 Google Sheets 資料整理功能案例。" /><title>大地女力｜線上投票案例</title></head>
+  <body>
+    <main class="case-page">
+      <a class="back-link" href={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/#work`}>← 返回案例</a>
+      <header class="case-intro">
+        <p class="eyebrow">CASE 04 / GAIA 2022</p>
+        <h1>大地女力</h1>
+        <p class="intro">透過 LINE 帳號授權參與候選人投票，並整理投票資料供業主確認。</p>
+        <ul class="tech" aria-label="功能"><li>活動投票</li><li>LINE 登入</li><li>資料統計</li></ul>
+      </header>
+      <section class="feature reservation" aria-labelledby="vote-title">
+        <div class="feature-heading"><span class="feature-number">01 / VOTING</span><h2 id="vote-title">候選人投票流程</h2></div>
+        <div class="feature-content">
+          <p>投票功能主要以 JavaScript 實作，串接 LINE 授權與 Google Apps Script，將參與資料整理至 Google Sheets。</p>
+          <ol class="steps">{steps.map((step, index) => <li><span class="step-number" aria-hidden="true">0{index + 1}</span><div><h3>{step.title}</h3><p>{step.description}</p></div></li>)}</ol>
+          <a class="external-link" href="https://events.storm.mg/campaign/gaia2022/" target="_blank" rel="noopener noreferrer">查看活動網站 <span aria-hidden="true">↗</span><span class="sr-only">（另開新視窗）</span></a>
+        </div>
+      </section>
+      <footer class="case-footer"><a href={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/#work`}>← 返回案例</a><span>大地女力 / 線上投票</span></footer>
+    </main>
+  </body>
+</html>
+<style>
+  :global(*) { box-sizing: border-box; }
+  :global(body) { margin: 0; background: #f6f5ef; color: #223c33; font-family: Inter, 'Noto Sans TC', system-ui, sans-serif; }
+  :global(a) { color: inherit; }
+  :global(a:focus-visible) { outline: 3px solid #527134; outline-offset: 5px; }
+  .case-page { max-width: 1000px; margin: 0 auto; padding: 40px clamp(22px, 5vw, 64px) 32px; }
+  .back-link, .case-footer a { display: inline-block; padding: 10px 0; font-size: 14px; text-decoration: none; }
+  .case-intro { padding: clamp(68px, 10vw, 116px) 0 76px; border-bottom: 1px solid #cfd5cc; }
+  .eyebrow, .feature-number { margin: 0 0 22px; color: #66756c; font-size: 11px; font-weight: 650; letter-spacing: .15em; }
+  h1, h2, h3, p { margin: 0; }
+  h1 { font-size: clamp(42px, 7vw, 68px); font-weight: 550; letter-spacing: -.045em; line-height: 1.2; }
+  .intro { max-width: 580px; margin-top: 24px; color: #627067; font-size: clamp(16px, 2vw, 20px); line-height: 1.9; }
+  .tech { display: flex; flex-wrap: wrap; gap: 9px; margin: 30px 0 0; padding: 0; list-style: none; }
+  .tech li { padding: 7px 13px; border: 1px solid #c8d0c6; border-radius: 30px; font-size: 12px; }
+  .feature { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: 48px; padding: 76px 0; border-bottom: 1px solid #cfd5cc; }
+  h2 { font-size: clamp(28px, 3.5vw, 38px); font-weight: 550; letter-spacing: -.04em; line-height: 1.3; }
+  .feature-content > p { color: #56665d; font-size: 16px; line-height: 1.9; }
+  .external-link { display: inline-flex; align-items: center; gap: 12px; min-height: 44px; margin-top: 22px; font-size: 14px; font-weight: 600; text-decoration-thickness: 1px; text-underline-offset: 5px; }
+  .steps { display: grid; gap: 0; margin: 32px 0 0; padding: 0; list-style: none; border-top: 1px solid #d5dad2; }
+  .steps li { display: grid; grid-template-columns: 34px minmax(0, 1fr); gap: 12px; padding: 20px 0; border-bottom: 1px solid #d5dad2; }
+  .step-number { padding-top: 3px; color: #718177; font-size: 12px; }
+  h3 { font-size: 17px; font-weight: 650; }
+  .steps p { margin-top: 7px; color: #627067; font-size: 14px; line-height: 1.8; }
+  .case-footer { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding-top: 24px; color: #627067; font-size: 12px; }
+  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+  @media (max-width: 700px) { .case-intro { padding: 64px 0 56px; } .feature { grid-template-columns: 1fr; gap: 24px; padding: 56px 0; } .feature-number { margin-bottom: 12px; } .case-footer { align-items: flex-start; flex-direction: column; gap: 4px; } }
+</style>

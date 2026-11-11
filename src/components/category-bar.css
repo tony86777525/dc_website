@@ -1,0 +1,8 @@
+/* A centered translucent surface; the current section is identified by its icon and label. */
+header nav.category-bar{display:flex;justify-content:center;align-items:center;gap:clamp(2px,2vw,20px);width:max-content;max-width:100%;padding:8px 12px;border:1px solid rgb(255 255 255 / 10%);border-radius:22px;background:rgb(25 25 35 / 62%);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);box-shadow:0 8px 28px rgb(0 0 0 / 18%);color:#a6a6b1}
+header nav.category-bar a.category-link,header nav.category-bar a.category-link:first-child{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;min-width:44px;min-height:48px;padding:4px 0;border:0;border-radius:0;background:transparent;color:#a6a6b1;font-size:12px;line-height:1;white-space:nowrap;text-decoration:none}
+header nav.category-bar a.category-link svg{color:inherit}
+header nav.category-bar a.category-link[aria-current]{color:#f3f5ff}
+header nav.category-bar a.category-link[aria-current] svg{color:var(--category-accent,#0071e3)}
+header nav.category-bar a.category-link:focus-visible{outline:2px solid var(--category-accent,#0071e3);outline-offset:3px;border-radius:6px}
+@media(max-width:700px){header nav.category-bar{gap:clamp(2px,1.6vw,12px);padding:6px 8px}header nav.category-bar a.category-link:nth-child(3){display:flex}}

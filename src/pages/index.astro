@@ -1,0 +1,16 @@
+---
+import Base from '../layouts/Base.astro';
+import CaseDeck from '../components/CaseDeck';
+import { MessageSquareText, ClipboardList, Code2, PackageCheck } from 'lucide-react';
+import '../styles/scroll-loader.css';
+import {profile,services} from '../data/site';
+---
+<Base><div id="scroll-loader" class="scroll-loader" role="status" aria-live="polite" hidden><span class="scroll-loader__dots" aria-hidden="true"><span class="scroll-loader__dot"></span><span class="scroll-loader__dot"></span><span class="scroll-loader__dot"></span></span><span class="scroll-loader__text">正在切換內容</span></div><section id="home" class="hero"><img class="hero-avatar" src="https://lh3.googleusercontent.com/a/ACg8ocL5dQsT3WIrk78Hou9KixJp1DabCe4lY5BCWai212AaJ_c61WyS=s576-c-no" alt="個人頭像" width="72" height="72" fetchpriority="high"/><div class="eyebrow">INDEPENDENT WEB DEVELOPER / TAIWAN</div><h1>把你的需求，<br/>做成<span>真正好用</span>的網站。</h1><div class="hero-bottom"><p>從網站、後台到服務串接，<br/>一起把想法釐清，讓每一步都有方向。</p><a class="button" href="#services">看看我能協助什麼 <span>↗</span></a></div><div class="hero-foot"><span>PHP · LARAVEL · API · MAINTENANCE</span><span>01 — 從需求開始</span></div></section>
+<section id="services"><div class="section-top"><div><div class="eyebrow">01 / SERVICES</div><h2>讓技術，接住你的業務。</h2></div><p>依實際需求界定範圍，<br/>選擇適合的做法。</p></div><div class="services">{services.map((s,i)=><article><span class="number">0{i+1}</span><div class="eyebrow">{s.en}</div><h3>{s.title}</h3><p>{s.text}</p><div class="tags">{s.tags.map(t=><span>{t}</span>)}</div></article>)}</div></section>
+<section id="work"><div class="section-top"><div><div class="eyebrow">02 / SELECTED WORK</div><h2>不只看畫面，也看見流程。</h2></div><p>從實際案例，了解系統如何運作。</p></div><CaseDeck client:load/></section>
+<section id="about" class="about"><div><div class="eyebrow">03 / ABOUT</div><h2>先理解問題，<br/>再開始寫程式。</h2></div><div><p class="lead">以 PHP、Laravel、MySQL 與 API 整合為主要開發方向，協助建置與維護網站系統。</p><p>合作從釐清目標開始：誰會使用、需要完成什麼，以及如何判斷交付成果。把範圍說清楚，也讓後續維護更容易。</p><p class="note">個人姓名、完整經歷與可公開作品整理中。</p></div></section>
+<section id="process"><div class="eyebrow">04 / PROCESS</div><h2>有條理地，一起往前。</h2><div class="process">{[{title:'需求討論',description:'了解目標、使用情境與現有資料。',Icon:MessageSquareText},{title:'評估與報價',description:'確認範圍、時程與驗收方式。',Icon:ClipboardList},{title:'開發與確認',description:'依約定階段展示並確認成果。',Icon:Code2},{title:'交付與維護',description:'完成驗收、交接與後續支援約定。',Icon:PackageCheck}].map(({title,description,Icon},i)=><div><span class="number">0{i+1}</span><div class="process-icon-row"><span class="process-icon"><Icon size={22} strokeWidth={1.4} aria-hidden="true" /></span></div><h3>{title}</h3><p>{description}</p></div>)}</div></section>
+<section id="contact" class="contact"><div class="eyebrow">LET’S BUILD SOMETHING USEFUL</div><h2>你有需求，<br/>我們從一段對話開始。</h2><p>描述想解決的問題、預計時程與參考資料，<br/>讓第一次討論更有方向。</p><div class="contact-links"><a class="button" href={`mailto:${profile.email}`}>{profile.email} ↗</a></div></section></Base>
+<script>
+import '../scripts/scroll-reveal';
+</script>
