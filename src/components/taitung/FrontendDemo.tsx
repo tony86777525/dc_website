@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Stage } from '../../vendor/stageshow/kit/stage';
 import { Window } from '../../vendor/stageshow/kit/window';
-import { Button } from '../../vendor/stageshow/kit/controls/button';
+import { Button } from '../../vendor/stageshow/kit/controls/Button';
 import { Card } from '../../vendor/stageshow/kit/parts/Card';
 import type { Act } from '../../vendor/stageshow/kit/act';
 import './frontend-demo.css';

@@ -1,7 +1,7 @@
 import { Stage } from '../../vendor/stageshow/kit/stage';
 import { Window, Bar } from '../../vendor/stageshow/kit/window';
-import { Field } from '../../vendor/stageshow/kit/controls/field';
-import { Button } from '../../vendor/stageshow/kit/controls/button';
+import { Field } from '../../vendor/stageshow/kit/controls/Field';
+import { Button } from '../../vendor/stageshow/kit/controls/Button';
 import './case-visual.css';
 
 export type CaseVisualType = 'expo' | 'yahsin' | 'mysore' | 'gaia' | 'sunbot';

@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { Stage } from '../../vendor/stageshow/kit/stage';
 import { Window, Text } from '../../vendor/stageshow/kit/window';
-import { Field } from '../../vendor/stageshow/kit/controls/field';
-import { Button } from '../../vendor/stageshow/kit/controls/button';
+import { Field } from '../../vendor/stageshow/kit/controls/Field';
+import { Button } from '../../vendor/stageshow/kit/controls/Button';
 import { States } from '../../vendor/stageshow/kit/motion/States';
 import type { Act } from '../../vendor/stageshow/kit/act';
 import './news.css';
